@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<body>
+
+	<div class="container-fluid theme-showcase" role="main">
+
+		<div class="jumbotron bg-3">
+			<h1>
+				<font>Log Based Analytical Engine</font>
+			</h1>
+
+		</div>
+	</div>
+	<div class="container ">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<form class="form-signin" action="./Controller" method="post">
+				<h2 class="form-signin-heading">Please sign in</h2>
+				<p>
+					<label for="inputEmail" class="sr-only">Email address</label> <input
+						type="email" id="inputEmail" class="form-control"
+						placeholder="Email address" required autofocus>
+				</p>
+				
+				<p>
+					<label for="inputPassword" class="sr-only">Password</label> <input
+						type="password" id="inputPassword" class="form-control"
+						placeholder="Password" required>
+				</p>
+				<p> <input class="btn btn-lg btn-success btn-block" type="submit"
+					value="Sign In"></p>
+					<input type="hidden" name="action" value="login"/>
+			</form>
+
+		</div>
+	</div>
+	<footer>
+		<div w3-include-html="Footer.html">
+			<script>
+				w3IncludeHTML();
+			</script>
+		</div>
+	</footer>
+</body>
+</html>
